@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Signika+Negative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/main.css">
-    <title>Document</title>
+    <title>Calatrava</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1 class="header_title">Santiago Calatrava</h1>
         <nav class="header_nav">
             <p class="nav_Historia"><a>Historia</a></p>
@@ -18,28 +18,28 @@
             <p class="nav_figma"><a>Figma</a></p>
             <p class="nav_icon"><a><img src="icons/plus-circle.svg" alt="Icono para ver mas información"></a></p>
         </nav>
-        <i class="responsive_icon"><img src="icons/menu.svg"></i>
+        <i class="responsive_icon"><img src="icons/menu.svg" alt="Icono de menu"></i>
     </header>
     <aside class="lateral_menu">
-        <p class="nav_Historia"><a>Historia</a></p>
-        <p class="nav_obras"><a>Obras</a></p>
-        <p class="nav_figma"><a>Figma</a></p>
+        <p class="nav_Historia"><a href="#second_section">Historia</a></p>
+        <p class="nav_obras"><a href="obras.html" target="_blank">Obras</a></p>
+        <p class="nav_figma"><a href="https://www.figma.com/file/EUU2ItI3mfCiDqq5yhlpX8/Untitled?type=design&node-id=5%3A28&mode=design&t=S0XLa3PsxghfM3wj-1" target="_blank" rel="ugc">Figma</a></p>
     </aside>
-    <main>
-        <section class="calatrava">
-            <article>
-                <h1>Calatrava</h1>
-                <h3>Oda a la pureza</h3>
+    <main class="main">
+        <section class="main_firstseccion calatrava">
+            <article class="first_article">
+                <h1 class="first_name">Calatrava</h1>
+                <h3 class="first_text">Oda a la pureza</h3>
             </article>
-            <img src="images/calatrava.jpeg">
+            <img src="images/calatrava.jpeg" alt="Images de Calatrava viendo al horizonte" class="first_image">
         </section>
-        <section class="primera">
-            <img src="images/valencia.jpeg">
-            <article>
-                <p>Especializado en grandes estructuras y con un estilo modernista muy característico, Santiago Calatrava es uno de los arquitectos de más renombre de España. </p>
+        <section class="main_secondseccion primera" id="second_section">
+            <img src="images/valencia.jpeg" alt="Ciudad de las ciencias en Valencia" class="second_image">
+            <article class="second_article">
+                <p class="second_article_p">Especializado en grandes estructuras y con un estilo modernista muy característico, Santiago Calatrava es uno de los arquitectos de más renombre de España. </p>
             </article>
         </section>
-        <section class="text">
+        <section class="main_thirdseccion text">
             <article>
                 <div class="first">
                     <p>Su primer trabajo fue la estación de ferrocarril de Stadelhofen, adjudicada en 1983. Desde entonces, no pararon de lloverle encargos. Y, aunque Solo un año más tarde, Calatrava crearía en Barcelona su primer puente: el de Bac de Roda, cuya estructura diseñada con una ala en cada uno de sus laterales se convertiría en una de sus principales señas de identidad.</p>
@@ -56,7 +56,6 @@
             <article>
                 <p>“Sus diseños continúan siendo el centro de atención y un gran atractivo turístico de las ciudades donde se hallan”</p>
             </article>
-
         </section>
     </main>
     <script src="js/main.js"></script>
