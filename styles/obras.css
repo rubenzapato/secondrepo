@@ -81,6 +81,7 @@ aside {
   transition: all 0.25s ease;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 aside.show {
@@ -91,9 +92,19 @@ aside p {
   font-size: 1.5rem;
   padding: 20px 40px;
   transition: all 0.25s ease;
+  text-decoration: none;
 }
 
-aside p:hover {
+aside a {
+  text-decoration: none;
+  color: #151515;
+  font-size: 1.5rem;
+  padding: 20px 40px;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+aside p:hover, aside a:hover {
   color: #F7F7F7;
   background-color: #151515;
 }

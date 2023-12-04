@@ -81,16 +81,23 @@ aside {
   transition: all 0.25s ease;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 aside.show {
   right: 0;
 }
 
+aside a {
+  text-decoration: none;
+  color: #151515;
+}
+
 aside p {
   font-size: 1.5rem;
   padding: 20px 40px;
   transition: all 0.25s ease;
+  text-decoration: none;
 }
 
 aside p:hover {
@@ -212,6 +219,7 @@ main .text article .second .boton {
   border: 3px solid #151515;
   transition: 0.4s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
 }
 
 main .text article .second .boton:hover {
@@ -258,13 +266,12 @@ main .main_5section form {
 }
 
 main .main_5section form label {
-  width: 600px;
   font-size: 1.3rem;
   margin: 20px;
 }
 
 main .main_5section form input {
-  width: 400px;
+  width: clamp(200px, 30%, 400px);
   height: 50px;
 }
 
@@ -346,5 +353,11 @@ main .main_5section form button:hover {
 @media only screen and (max-width: 500px) {
   p {
     font-size: 1rem;
+  }
+  label {
+    font-size: 1rem;
+  }
+  input {
+    width: 200px;
   }
 }

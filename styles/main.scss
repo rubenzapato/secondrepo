@@ -83,16 +83,22 @@ aside {
     transition: all 0.25s ease;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 
 
     &.show {
         right: 0;
+    }
+    a{
+        text-decoration: none;
+        color: $negro; 
     }
 
     p {
         font-size: 1.5rem;
         padding: 20px 40px;
         transition: all 0.25s ease;
+        text-decoration: none;
     }
 
     p:hover {
@@ -218,6 +224,7 @@ main {
                     border: 3px solid $negro;
                     transition: 0.4s ease-in-out;
                     cursor: pointer;
+                    text-decoration: none;
                 }
 
                 .boton:hover {
@@ -263,13 +270,11 @@ main {
             justify-content: center;
             align-items: center;
             label{
-                width: 600px; 
                 font-size: 1.3rem;
-                margin: 20px; 
-                
+                margin: 20px;    
             }
             input{
-                width: 400px; 
+                width: clamp(200px,30%,400px); 
                 height: 50px;
         
             }
@@ -377,6 +382,12 @@ main {
 @media only screen and (max-width: 500px) {
     p{
         font-size: 1rem;
+    }
+    label{
+        font-size: 1rem; 
+    }
+    input{
+        width: 200px; 
     }
 
 }
