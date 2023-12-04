@@ -88,11 +88,6 @@ aside.show {
   right: 0;
 }
 
-aside a {
-  text-decoration: none;
-  color: #151515;
-}
-
 aside p {
   font-size: 1.5rem;
   padding: 20px 40px;
@@ -103,6 +98,15 @@ aside p {
 aside p:hover {
   color: #F7F7F7;
   background-color: #151515;
+}
+
+aside a {
+  text-decoration: none;
+  color: #151515;
+}
+
+aside a:hover {
+  color: #F7F7F7;
 }
 
 main .calatrava {

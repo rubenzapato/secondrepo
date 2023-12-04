@@ -103,6 +103,10 @@ aside a {
   color: #151515;
 }
 
+aside a:hover {
+  color: #F7F7F7;
+}
+
 main {
   padding: 30px;
   margin: 0;
