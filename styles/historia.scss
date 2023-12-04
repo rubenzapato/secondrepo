@@ -1,0 +1,162 @@
+$negro: #151515;
+$blanco: #F7F7F7;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $negro;
+    width: 100vw;
+    box-sizing: border-box;
+    height: 10vh;
+    position: fixed;
+
+    h1 {
+        color: $blanco;
+        font-size: 2rem;
+        padding-left: 30px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            gap: 20px;
+            padding: 20px 30px;
+            transition: 0.3s ease-in-out;
+            border-radius: 10px;
+
+            a {
+                text-decoration: none;
+                color: $blanco;
+                font-size: 1.6rem;
+                gap: 20px;
+
+                img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 32px;
+                }
+            }
+        }
+
+        p:hover {
+            background-color: #3d3d3d;
+        }
+
+    }
+
+    .responsive_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        display: none;
+
+        img {
+            width: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+aside {
+    width: clamp(300px, 30vw, 600px);
+    position: fixed;
+    right: -150%;
+    top: 60px;
+    background-color: #fff;
+    padding: 20px;
+    min-height: 100%;
+    box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.29);
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+
+
+    &.show {
+        right: 0;
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding: 20px 40px;
+        transition: all 0.25s ease;
+    }
+
+    p:hover {
+        color: $blanco;
+        background-color: $negro;
+    }
+
+
+
+}
+
+
+main{
+    padding: 30px;
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .first{
+        padding-top: 100px;
+        p{
+            font-size: 1.3rem;
+            padding-left: 40px;
+        }
+    }
+    article{
+        width: clamp(400px, 50vw, 800px); 
+        margin: 0 auto; 
+        h1{
+            font-size: 3rem;
+            margin: 30px
+
+        }
+        h3{
+            font-size: 1.2rem;
+            margin: 20px; 
+        }
+        p{
+            font-size: 1.2rem; 
+            margin: 10px; 
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 850px) {
+    header {
+        justify-content: end;
+
+        .header_title {
+            display: none;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .responsive_icon {
+            display: inline;
+        }
+
+    }
+
+
+}
