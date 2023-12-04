@@ -33,7 +33,7 @@ header {
             padding: 20px 30px;
             transition: 0.3s ease-in-out;
             border-radius: 10px;
-
+            cursor: pointer;
             a {
                 text-decoration: none;
                 color: $blanco;
@@ -61,7 +61,7 @@ header {
         align-items: center;
         padding: 0 30px;
         display: none;
-
+        cursor: pointer;
         img {
             width: 32px;
             display: flex;
@@ -217,6 +217,7 @@ main {
                     align-items: center;
                     border: 3px solid $negro;
                     transition: 0.4s ease-in-out;
+                    cursor: pointer;
                 }
 
                 .boton:hover {
