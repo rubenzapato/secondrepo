@@ -95,18 +95,18 @@ aside p {
   text-decoration: none;
 }
 
+aside p:hover {
+  color: #F7F7F7;
+  background-color: #151515;
+}
+
 aside a {
   text-decoration: none;
   color: #151515;
-  font-size: 1.5rem;
-  padding: 20px 40px;
-  transition: all 0.25s ease;
-  text-decoration: none;
 }
 
-aside p:hover, aside a:hover {
+aside a:hover {
   color: #F7F7F7;
-  background-color: #151515;
 }
 
 main {

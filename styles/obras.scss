@@ -95,17 +95,17 @@ aside {
         transition: all 0.25s ease;
         text-decoration: none;
     }
+
+    p:hover {
+        color: $blanco;
+        background-color: $negro;
+    }
     a{
         text-decoration: none;
         color: $negro; 
-        font-size: 1.5rem;
-        padding: 20px 40px;
-        transition: all 0.25s ease;
-        text-decoration: none;
     }
-    p:hover, a:hover {
-        color: $blanco;
-        background-color: $negro;
+    a:hover{
+        color: $blanco; 
     }
 
     
