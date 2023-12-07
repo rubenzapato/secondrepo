@@ -226,8 +226,18 @@ main .text article .second .boton {
   text-decoration: none;
 }
 
+main .text article .second .boton a {
+  text-decoration: none;
+  color: #F7F7F7;
+}
+
 main .text article .second .boton:hover {
   background-color: #F7F7F7;
+  color: #151515;
+}
+
+main .text article .second .boton:hover a {
+  text-decoration: none;
   color: #151515;
 }
 
@@ -281,7 +291,7 @@ main .main_5section form input {
 
 main .main_5section form button {
   margin: 30px;
-  width: 400px;
+  width: clamp(200px, 40%, 400px);
   height: 40px;
   border: 3px solid #151515;
   background-color: #151515;
@@ -364,4 +374,9 @@ main .main_5section form button:hover {
   input {
     width: 200px;
   }
+}
+
+.link_section3 {
+  text-decoration: none;
+  color: #F7F7F7;
 }
