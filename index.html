@@ -20,14 +20,14 @@
             <p class="nav_Historia"><a href="historia.html" target="_blank">Historia</a></p>
             <p class="nav_obras"><a href="obras.html" target="_blank">Obras</a></p>
             <p class="nav_figma"><a  href="https://www.figma.com/file/EUU2ItI3mfCiDqq5yhlpX8/Untitled?type=design&node-id=5%3A28&mode=design&t=S0XLa3PsxghfM3wj-1" target="_blank" >Figma</a></p>
-            <p class="nav_icon"><a href="https://viajes.nationalgeographic.com.es/a/obras-mas-representativas-calatrava_10561"><img src="icons/plus-circle.svg" alt="Icono para ver mas información"></a></p>
+            <p class="nav_icon"><a aria-label="Lee mas de Calatrava en el siguiente link" href="https://viajes.nationalgeographic.com.es/a/obras-mas-representativas-calatrava_10561"><img src="icons/plus-circle.svg" alt="Icono para ver mas información"></a></p>
         </nav>
         <i class="responsive_icon"><img src="icons/menu.svg" alt="Icono de menu"></i>
     </header>
     <aside class="lateral_menu">
         <p class="nav_Historia"><a href="historia.html" target="_blank">Historia</a></p>
         <p class="nav_obras"><a href="obras.html" target="_blank">Obras</a></p>
-        <p class="nav_figma"><a href="https://www.figma.com/file/EUU2ItI3mfCiDqq5yhlpX8/Untitled?type=design&node-id=5%3A28&mode=design&t=S0XLa3PsxghfM3wj-1" target="_blank" rel="unfollow">Figma</a></p>
+        <p class="nav_figma"><a  aria-label="Lee mas de Calatrava en el siguiente link" href="https://www.figma.com/file/EUU2ItI3mfCiDqq5yhlpX8/Untitled?type=design&node-id=5%3A28&mode=design&t=S0XLa3PsxghfM3wj-1" target="_blank" rel="unfollow">Figma</a></p>
     </aside>
     <main class="main">
         <section class="main_firstseccion calatrava">
@@ -52,7 +52,7 @@
                 <div class="second article_div">
                     <p class="bold section3_text"> Su arquitectura al límite le han obligado a defender sus proyectos en los tribunales de justicia con sentencias tanto a favor como en contra del arquitecto. 
                     </p>
-                    <div class="boton section3_boton"><a href="https://viajes.nationalgeographic.com.es/a/obras-mas-representativas-calatrava_10561" target="_blank" rel="ugc">Ver más</a></div>
+                    <div class="boton section3_boton"><a class="link_section3" aria-label="Lee mas de Calatrava en el siguiente link" href="https://viajes.nationalgeographic.com.es/a/obras-mas-representativas-calatrava_10561" target="_blank" rel="ugc">Ver más</a></div>
                 </div>
             </article>
         </section>
@@ -64,13 +64,13 @@
         <section class="main_5section">
             <h1 class="section5_title">Contacto</h1>
             <form action="/procesar-formulario" method="post" class="section5_form">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                <button type="submit">Enviar</button>
+                <label  class="form_name"for="nombre">Nombre:</label>
+                <input class="form_input"type="text" id="nombre" name="nombre" required>
+                <label  class="form_mail"for="email">Correo electrónico:</label>
+                <input  class="form_input" type="email" id="email" name="email" required>
+                <label  class="form_mes"for="mensaje">Mensaje:</label>
+                <textarea  class="form_textarea" id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button  class="form_button" type="submit" aria-role="button">Enviar</button>
             </form>
         </section>
     </main>
